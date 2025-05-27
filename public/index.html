@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dibs Waitlist</title>
+</head>
+<body>
+  <h1>Join the Waitlist</h1>
+  <input type="email" id="email" placeholder="Enter your email" />
+  <button onclick="submitEmail()">Submit</button>
+  <p id="email-error" style="color: red; display: none;">Please enter a valid email.</p>
+
+  <script>
+    function submitEmail() {
+      const email = document.getElementById("email").value.trim();
+      const error = document.getElementById("email-error");
+
+      const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      if (!isValid) {
+        error.style.display = "block";
+        return;
+      }
+
+      error.style.display = "none";
+
+      fetch('/join-waitlist', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email })
+      }).then(res => {
+        if (res.ok) {
+          alert("You're on the list!");
+          document.getElementById("email").value = '';
+        } else {
+          alert("Try again.");
+        }
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nicole Bednarchik</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="main-page">
+  <header class="nav">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page">
+    <h1 class="name" id="home">NICOLE<br />BEDNARCHIK</h1>
+
+    <section class="notebook-section" id="notebook">
+      <img src="notebook-me-into.svg" alt="Notebook" class="notebook-image" />
+    </section>
+
+    <section class="about-section" id="about">
+      <h2 class="section-title">About Me</h2>
+      <img src="about-me.svg" alt="About Me Clipboard" class="about-image" />
+    </section>
+
+    <section class="skills-section" id="skills">
+      <h2 class="section-title">Skills</h2>
+
+      <img src="swe-starter-pack.svg" alt="Software Engineer Starter Pack" class="skills-image" />
+
+      <!-- ICON COLLAGE COMES AFTER SWE STARTER PACK -->
+      <div class="icon-collage">
+        <div class="icon-wrapper envelope">
+          <div class="flip-card" onclick="this.classList.toggle('flipped')">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="facts-about-me-envelope.png" alt="Envelope Front" />
+              </div>
+              <div class="flip-card-back">
+                <img src="back-facts-about-me-envelope.svg" alt="Envelope Back" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="pet-gallery.html" class="icon-wrapper camera">
+          <img src="camera.png" alt="Camera" />
+        </a>
+
+        <div class="icon-wrapper headphones">
+          <img src="wired-headphones.png" alt="Headphones" />
+        </div>
+      </div>
+
+      <!-- SPOTIFY PLAYER (HIDDEN INITIALLY) -->
+      <div id="spotify-embed" class="spotify-container hidden">
+        <iframe style="border-radius:12px"
+          src="https://open.spotify.com/embed/playlist/4kb5MUjfVsrWqS4NeJXXRS?utm_source=generator"
+          width="100%" height="600" frameborder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy">
+        </iframe>
+      </div>
+    </section>
+
+    <section id="resume">
+      <!-- Resume content here -->
+    </section>
+  </div>
+
+  <!-- SCRIPT FOR SPOTIFY TOGGLE -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const headphones = document.querySelector('.icon-wrapper.headphones');
+      const spotifyContainer = document.getElementById('spotify-embed');
+
+      headphones.addEventListener('click', () => {
+        spotifyContainer.classList.toggle('hidden');
+      });
+    });
+  </script>
+
+<section class="projects-section" id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects-container">
+    <a href="gatr.html" class="project-card">
+      <img src="gatr-thumbnail.svg" alt="GATR">
+      <h3>GATR</h3>
+    </a>
+    <a href="dibs.html" class="project-card">
+      <img src="dibs-thumbnail.svg" alt="DIBS">
+      <h3>DIBS</h3>
+    </a>
+  </div>
+</section>
+
+
+</body>
+</html>

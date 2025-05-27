@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .flip-card-inner.flipped {
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+<body class="dark-gallery">
+    <div class="header-wrapper">
+        <a href="index.html" class="back-button">← Back to Home</a>
+    </div>
+
+  <h1 class="gallery-title">My Pet Gallery</h1>
+
+  <div class="wrapper">
+    <div class="gallery">
+
+      <div class="gallery__item gallery__item--1">
+        <div class="gallery__link" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="bea.JPG" class="gallery__image" alt="Bea">
+              <div class="gallery__overlay"><span>Bea</span></div>
+            </div>
+            <div class="flip-card-back">
+              <p>Bea is a long-haired Scottish Fold. She loves sleeping, sunbathing, and being pet. She’ll start purring if you so much as glance at her. Bea and Zeeva are half-sisters, but Bea hates her nephews for absolutely no reason. She will attempt to smack them at any given chance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item gallery__item--2">
+        <div class="gallery__link" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="zeeva.JPG" class="gallery__image" alt="Zeeva">
+              <div class="gallery__overlay"><span>Zeeva</span></div>
+            </div>
+            <div class="flip-card-back">
+              <p>Zeeva is a short-haired Scottish Straight and mother of Tofu, Ronnie, and Tobey. She loves to scream (meow loudly) for absolutely no reason. If you say her name, she’ll meow back every time. She loves to cuddle and her guilty pleasure is Costco rotisserie chicken.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item gallery__item--3">
+        <div class="gallery__link" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="tofu.JPG" class="gallery__image" alt="Tofu">
+              <div class="gallery__overlay"><span>Tofu</span></div>
+            </div>
+            <div class="flip-card-back">
+              <p>Tofu is a short-haired Scottish Fold and the calmest cat you’ll ever meet. We’re pretty sure he has no thoughts. He simply exists. You can hold him, pet him, even cut his nails. He won’t mind. The only time he shows interest is when red caviar or a Laughing Cow cheese wedge comes out. When he’s not sleeping, you can find him sitting in the kitchen sink. Why? We honestly don’t know.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item gallery__item--4">
+        <div class="gallery__link" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="ronnie.JPG" class="gallery__image" alt="Ronnie">
+              <div class="gallery__overlay"><span>Ronnie</span></div>
+            </div>
+            <div class="flip-card-back">
+              <p>Ronnie is a short-haired Scottish Straight. He is the smartest and chunkiest of the bunch. Ronnie spends his days scheming how to sneak into an Amazon box or the bread box. His favorite food group is carbs, and no matter how hard we try, he will find the loaf of bread. We call him Ronnie Bo (short for carbo-hydrate).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item gallery__item--5">
+        <div class="gallery__link" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="tobey3.JPG" class="gallery__image" alt="Tobey">
+              <div class="gallery__overlay"><span>Tobey</span></div>
+            </div>
+            <div class="flip-card-back">
+              <p>Tobey (named after Tobey Maguire) is a short-haired Scottish Fold and the softest cat in the house. Hes graceful, and polite, a real gentleman. He usually keeps to himself, unless Ronnie ropes him into a wrestling match. Tobey prefers beds to chaos and will often climb on top of you to cuddle. He’s not big on food, but he does love hand cream and ripping up loose sheets of paper. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item gallery__item--6">
+        <div class="gallery__link" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="ralph.JPG" class="gallery__image" alt="Ralph">
+              <div class="gallery__overlay"><span>Ralph</span></div>
+            </div>
+            <div class="flip-card-back">
+                <p>Ralph is a goofy Bernese Mountain Dog with a big personality. He spends most of his day begging for belly rubs from anyone within reach and keeping the cats on high alert. He's best friends with Buddy, and the two are always getting into something together. Ralph loves every person he meets and tries to give every Amazon delivery driver a slobery kiss.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item gallery__item--7">
+        <div class="gallery__link" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="buddy.JPG" class="gallery__image" alt="Buddy">
+              <div class="gallery__overlay"><span>Buddy</span></div>
+            </div>
+            <div class="flip-card-back">
+              <p>This is Buddy (Ralph’s best friend) and the calmest dog you’ll ever meet. He’s a rescue from the streets of Georgia (the country) and has the gentlest, most easygoing personality. We always say he’s the dog equivalent of our cat Tofu. Buddy’s favorite place to be is right next to you while you watch TV.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item gallery__item--8">
+        <div class="gallery__link" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="sophi.JPG" class="gallery__image" alt="Sophi">
+              <div class="gallery__overlay"><span>Sophi</span></div>
+            </div>
+            <div class="flip-card-back">
+              <p> This is Sophi, a rescue from a shelter in Israel. She’s the leader of the pack, she's always on high alert making sure everyone is safe and accounted for. But when she’s in a calm mood, she's the sweetest companion and turns into a little baby. She loves being close to you, gently nudging her head onto your lap to ask for pets.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item gallery__item--9">
+        <div class="gallery__link" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="nala.JPG" class="gallery__image" alt="Nala">
+              <div class="gallery__overlay"><span>Nala</span></div>
+            </div>
+            <div class="flip-card-back">
+              <p>This is Nala, one of our bearded dragons. She doesn’t do much except chill and look cute (which honestly, is enough). She loves hanging out under her heat lamp and snacking on blue worms. If she sits on your shoulder, give it five minutes and she’ll try to climb onto your head using your hair. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery__item gallery__item--10">
+        <div class="gallery__link" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="luna.JPG" class="gallery__image" alt="Chickens">
+              <div class="gallery__overlay"><span>Chickens</span></div>
+            </div>
+            <div class="flip-card-back">
+              <p>We have five chickens! Luna (pictured), Sunny (Side Up), Eggo, Fries, and Twilight. Every morning, we collect their eggs and give them some pets. Luna is especially good at being held. One thing we’ve learned: if we don’t get them back in their house before sunset, they’ll fly surprisingly high and end up in our trees. That usually means dragging out the ladder to bring them down. It's always an adventure with them</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
