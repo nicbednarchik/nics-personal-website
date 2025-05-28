@@ -7,7 +7,7 @@
 
 body.main-page {
   min-height: 100vh;
-  background: url('paper-texture.png') center/cover no-repeat;
+  background: url('images/paper-texture.png') center/cover no-repeat;
   overflow-x: hidden;
   font-family: 'Nunito', sans-serif;
 }
@@ -467,7 +467,7 @@ html {
 
 .gatr-page {
   font-family: 'Arial', sans-serif;
-  background: url('gatr-texture-bg.png') center center / cover no-repeat, #0e0e0e;
+  background: url('images/gatr-texture-bg.png') center center / cover no-repeat, #0e0e0e;
   color: white;
   text-align: center;
 }
@@ -868,6 +868,27 @@ p {
   background-color: #8a4343;
 }
 
+/* ================== RESUME ================== */
+.resume-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.resume-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #111;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.resume-button:hover {
+  background-color: #444;
+}
 /* ================== MOBILE ================== */
 @media (max-width: 768px) {
   .icon-wrapper {
