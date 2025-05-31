@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nicolebednarchik.netlify.app/sitemap.xml

@@ -97,44 +97,51 @@ body.main-page {
 
 /* ========== ICON COLLAGE (ENVELOPE,CAMERA,HEADPHOENS) =========== */
 .icon-collage {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   width: 100%;
   max-width: 1000px;
-  height: 500px;
   margin: 0 auto 60px;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .icon-wrapper {
-  position: absolute;
+  position: static;
+  width: auto;
+  max-width: none;
   transition: transform 0.3s ease;
   cursor: pointer;
 }
 
+.icon-wrapper img,
+.flip-card-front img,
+.flip-card-back img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .icon-wrapper.envelope {
   top: 30px;
-  left: -20%;
-  width: 70vw;
+  left: -5%;
+  width: 750px;
   z-index: 1;
 }
 
 .icon-wrapper.camera {
   top: 60px;
-  left: 23%;
-  width: 60vw;
+  left: 15%;
+  width: 650px;
   z-index: 2;
 }
 
 .icon-wrapper.headphones {
   top: 100px;
   left: 60%;
-  width: 55vw;
+  width: 650px;
   z-index: 3;
-}
-
-.icon-wrapper img {
-  width: 100%;
-  height: auto;
-  display: block;
 }
 
 .icon-wrapper:hover {
@@ -874,11 +881,16 @@ p {
   text-align: center;
 }
 
+.resume-section h2,
+.resume-section p {
+  color: #000; 
+}
+
 .resume-button {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 24px;
-  background-color: #111;
+  background-color: #a05252;
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -887,8 +899,65 @@ p {
 }
 
 .resume-button:hover {
-  background-color: #444;
+  background-color: #7d3b3b;
 }
+
+/* ================== CONNECT ================== */
+.bottom-footer {
+  padding: 40px 20px;
+  background-color: #fceeee;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+.footer-name {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'Bodoni Moda', serif;
+  color: #a05252;; 
+  margin-bottom: 6px;
+}
+
+.connect-text {
+  font-size: 16px;
+  color: #a05252;
+  margin-bottom: 14px;
+}
+
+.connect-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.connect-icons img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.connect-icons img:hover {
+  transform: scale(1.15);
+  filter: brightness(1.15);
+}
+
+.back-to-top {
+  background-color: #a05252;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #7d3b3b;
+}
+
 /* ================== MOBILE ================== */
 @media (max-width: 768px) {
   .icon-wrapper {
