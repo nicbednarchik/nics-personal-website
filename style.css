@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  padding-top: 70px;
+}
+
 body.main-page {
   min-height: 100vh;
   background: url('images/paper-texture.png') center/cover no-repeat;
@@ -353,14 +357,17 @@ img[alt="Nala"] {
   margin-top: 115px;
 }
 /* ================== NAVIGATION BAR ================== */
-.nav {
+.main-page .nav {
+  background-color: #fceeee;
+  padding: 15px 20px;
+  position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  background: transparent;
-  z-index: 9999;
-  padding: 10px 0;
-  box-shadow: none;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
 
 .nav ul {
   display: flex;
@@ -570,14 +577,14 @@ html {
 }
 
 .dot {
-  position: absolute;
   width: 16px;
   height: 16px;
-  background-color: rgba(255, 255, 255, 0.6);
-  border: 2px solid white;
   border-radius: 50%;
+  background-color: #9DBD56; /* GATR green */
+  position: absolute;
   cursor: pointer;
-  transform: translate(-50%, -50%);
+  transition: background-color 0.3s ease;
+  border: 2px solid white; /* optional: adds visibility */
 }
 
 .dot::after {
@@ -595,6 +602,10 @@ html {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease-in-out;
+}
+
+.dot:hover {
+  background-color: #D93B3B; /* GATR red */
 }
 
 .dot:hover::after {
